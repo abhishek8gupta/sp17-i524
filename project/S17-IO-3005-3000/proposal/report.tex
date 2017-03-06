@@ -5,7 +5,7 @@
 \title{Project Proposal for I524}
 
 \author[1,*]{Abhishek Gupta}
-\author[2, **]{Avadhoot Agasti}
+\author[1, **]{Avadhoot Agasti}
 
 \affil[1]{School of Informatics and Computing, Bloomington, IN 47408, U.S.A.}
 
@@ -31,32 +31,30 @@
 
 \section{Problem}
 
-Given a wiki URL of a person, find out his details like School, Spouse, Coaches, language, alma-meter etc Typically, the wiki page has all this information available but in the free form text. We need to converting it into structured data format so that it can help us analyze the people, from the networks etc
+Given a wiki URL of a person, find out his details like School, Spouse, Coaches, language, alma-meter etc Typically, the wiki page has all this information available but in the free form text. We need to converting it into structured data format so that it can help us analyze the people, from the networks etc We can create a network by navigating the people mentioned in the wiki page. 
 
 \section{Solution}
 
-Use tensor flow\cite{www-tensor-develop} to create word vectors. Train it using manual tagging and then use the model for analytics and prediction.
+Use tensor flow \cite{www-tensor-python-develop} to create word vectors. Train it using manual tagging and then use the model for analytics and prediction.
 
 \begin{center}
  \begin{tabular}{||c c||} 
  \hline
  Technology Name & Purpose  \\ [0.5ex] 
  \hline\hline
- tensor flow & work vector and model \\ 
+ tensor flow \cite{www-tensor-develop} & work vector and model \\ 
  \hline
- spark streaming \cite{www-tensor-spark} & realtime data analysis \\
+ spark \cite{www-tensor-spark} & data analysis \\
  \hline
- ansible & automated deployment \\
+ ansible \cite{www-ansible} & automated deployment \\
  \hline
- python\cite{www-python-develop} & development \\
- \hline
- ansible\cite{www-python-develop} & deployment \\
+ python \cite{www-tensor-python-develop} & development \\
  \hline
 \end{tabular}
 \end{center}
 
 \section{Deployment}
-Solution will deploy using Ansible playbook.
+Solution will be deployed using Ansible \cite{www-ansible} playbook.
 
 % Bibliography
 
@@ -64,11 +62,10 @@ Solution will deploy using Ansible playbook.
  
 \paragraph{6. Conclusion}
 
-Put in some conclusion based on what you have researched
+Using this wiki analysis we should be able to build a network based on wiki data.
 
 \paragraph{Acknowledgement}
 
-Put in the information for this class and who may sponsor
-you. Examples will be given later
+We acknowledge our professor Gregor von Laszewski and all associate instructors for helping us and guiding us throughout this project.
 
 \end{document}
